@@ -1,0 +1,7 @@
+SELECT COUNT(*) AS SocietiesWithMoreThan5Students
+FROM (
+    SELECT SID
+    FROM ENROLLMENT
+    GROUP BY SID
+    HAVING COUNT(DISTINCT RollNo) > 5
+) AS Temp;
