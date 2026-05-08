@@ -1,0 +1,5 @@
+SELECT S.SocName
+FROM SOCIETY S
+JOIN ENROLLMENTE ON S.SocID = E.SID
+GROUP BY S.SocID, S.SocName, S.TotalSeats
+HAVING COUNT(E.RollNo) = (S.TotalSeats * 10 / 100);
