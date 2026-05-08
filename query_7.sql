@@ -1,0 +1,4 @@
+UPDATE SOCIETY
+SET MentorName = 'Mr. Watkins'
+WHERE SocID = 'SOC01';
+SELECT * FROM SOCIETY;
