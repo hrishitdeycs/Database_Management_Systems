@@ -1,0 +1,7 @@
+SELECT 'Student' AS Type, S.StudentName AS Name 
+FROM STUDENT S
+JOIN ENROLLMENT E ON S.RollNo = E.RollNo
+UNION
+SELECT 'Society' AS Type, SO.SocName AS Name
+FROM SOCIETY SO
+JOIN ENROLLMENT E ON SO.SocID = E.SID;
