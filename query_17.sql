@@ -1,0 +1,3 @@
+SELECT SocName
+FROM SOCIETY
+WHERE MentorName LIKE '%Gupta%';
