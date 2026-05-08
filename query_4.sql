@@ -1,3 +1,5 @@
+ALTER TABLE STUDENT
+MODIFY Course VARCHAR(20);
 SELECT *
 FROM STUDENT
 WHERE Course IN ('Computer Science', 'Chemistry');
