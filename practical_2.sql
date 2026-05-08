@@ -1,0 +1,2 @@
+SELECT SocName
+FROM SOCIETY;
