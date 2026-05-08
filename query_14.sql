@@ -1,0 +1,12 @@
+SELECT S.SocName
+FROM SOCIETY S
+JOIN ENROLLMENT E ON S.SocID = E.SID
+GROUP BY S.SocID, S.SocName
+HAVING COUNT(E.RollNo) = (
+    SELECT MAX(cnt)
+    FROM (
+        SELECT COUNT(RollNo) AS cnt
+        FROM ENROLLMENT
+        GROUP BY SID
+    ) AS temp
+);
