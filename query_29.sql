@@ -1,0 +1,9 @@
+SELECT COUNT(*)
+FROM (
+    SELECT S.SocID
+    FROM SOCIETY S
+    JOIN ENROLLMENT E ON S.SocID = E.SID
+    WHERE S.SocName LIKE 'S%t'
+    GROUP BY S.SocID
+    HAVING COUNT (DISTINCT E.RollNo) >= 5
+) AS EligibleSocieties;
