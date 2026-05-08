@@ -5,11 +5,11 @@ INSERT INTO STUDENT (RollNo, StudentName, Course, DOB) VALUES
 ('R004', 'Sneha Gupta',   'CSE', '2004-07-19'),
 ('R005', 'Karan Singh',   'IT',   '2003-09-30');
 INSERT INTO ENROLLMENT (RollNo, SID, DateOfEnrollment) VALUES
-('R001', 'SOC01', '2026-01-10'),
-('R002', 'SOC01', '2026-01-10'),
-('R003', 'SOC01', '2026-01-10'),
-('R004', 'SOC01', '2026-01-10'),
-('R005', 'SOC01', '2026-01-10');
+('R001', 'SOC02', '2026-01-10'),
+('R002', 'SOC02', '2026-01-10'),
+('R003', 'SOC02', '2026-01-10'),
+('R004', 'SOC02', '2026-01-10'),
+('R005', 'SOC02', '2026-01-10');
 SELECT S.SocName
 FROM SOCIETY S
 JOIN ENROLLMENT E ON S.SOCID = E.SID
