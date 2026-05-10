@@ -32,3 +32,6 @@ DROP ROLE 'invoice_entry';
 SELECT user, host
 FROM mysql.user
 WHERE user='invoice_entry';
+-- remove index
+DROP INDEX idx_lname_dno ON EMPLOYEE;
+SHOW INDEX FROM EMPLOYEE;
