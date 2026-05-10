@@ -6,7 +6,7 @@ PASSWORD HISTORY 5
 PASSWORD REUSE INTERVAL 365 DAY;
 SHOW CREATE USER 'demo'@'localhost';
 -- create role
-CREATE ROLE invoice_entry;
+CREATE ROLE 'invoice_entry';
 SELECT user, host
 FROM mysql.user
 WHERE user='invoice_entry';
