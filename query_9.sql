@@ -1,7 +1,8 @@
+SELECT S.StudentName,S.DOB
 FROM STUDENT S
 JOIN ENROLLMENT E ON S.RollNo = E. RollNo
 JOIN SOCIETY SO ON E.SID = SO.SocID
-WHERE SO.SocName = 'NSS';
+WHERE SO.SocName = 'NSS'; -- students who are in nss
 
 SELECT S.StudentName
 FROM STUDENT S
