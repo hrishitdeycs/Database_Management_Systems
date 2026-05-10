@@ -24,3 +24,11 @@ SHOW GRANTS FOR 'invoice_entry';
 CREATE INDEX idx_lname_dno
 ON EMPLOYEE(Lname, Dno);
 SHOW INDEX FROM EMPLOYEE;
+-- remove user
+DROP USER 'demo'@'localhost';
+SHOW CREATE USER 'demo'@'localhost';
+-- remove role
+DROP ROLE 'invoice_entry';
+SELECT user, host
+FROM mysql.user
+WHERE user='invoice_entry';
