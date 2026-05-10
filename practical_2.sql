@@ -18,7 +18,7 @@ SHOW GRANTS FOR 'invoice_entry';
 -- revoke privileges from a role
 REVOKE INSERT, UPDATE
 ON EMPLOYEE
-TO 'invoice_entry';
+FROM 'invoice_entry';
 SHOW GRANTS FOR 'invoice_entry';
 -- create index
 CREATE INDEX idx_lname_dno
